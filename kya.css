@@ -1,8 +1,9 @@
-@media only screen and (max-width: 779px) {
+@media only screen and (max-width: 550px) {
     img {
         width: 50%;
         height: auto;
     }
+
     * {
         float: none;
         position: static;
@@ -74,6 +75,10 @@
         background-attachment: fixed;
         background-repeat: no-repeat;
         background-size: cover;
+        left: 0;
+        top: 0;
+        width: 100%;
+        z-index: -1;
         box-shadow: inset 0px -100px 50px -50px #fff;
         background-size: contain;
         /*内側にぼかし(影)を入れる*/
@@ -115,7 +120,7 @@
 }
 
 @media print,
-screen and (min-width: 780px) {
+screen and (min-width: 551px) {
     * {
         float: none;
         position: static;
