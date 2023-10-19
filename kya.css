@@ -14,7 +14,7 @@
         font-family: "MS Pゴシック";
     }
 
-    .text-background-test01 {
+    .text-background {
         display: inline-block;
         font-size: 30px;
         font-weight: 600;
@@ -86,8 +86,8 @@
 
     .card {
         text-align: center;
-        width: 200px;
-        height: 200px;
+        width: 300px;
+        height: 300px;
         border: 1px solid lightgray;
         margin: auto;
     }
@@ -112,7 +112,7 @@
 
     footer {
         text-align: center;
-        font-size: 5px;
+        font-size: 7px;
         background-color: #333333;
         color: #FFFFFF;
         padding: 10px;
@@ -136,7 +136,7 @@ screen and (min-width: 551px) {
         height: auto;
     }
 
-    .text-background-test01 {
+    .text-background {
         display: inline-block;
         font-size: 30px;
         font-weight: 600;
