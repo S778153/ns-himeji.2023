@@ -99,14 +99,14 @@
 
     .description {
         width: 100%;
-        height: 90px;
+        height: 45px;
         padding-right: 12px;
         padding-left: 12px;
         box-sizing: border-box;
     }
 
     .description p {
-        font-size: 15px;
+        font-size: 22px;
         color: dimgray;
     }
 
@@ -229,24 +229,23 @@ screen and (min-width: 551px) {
 
     .picture img {
         width: 100%;
-        height: 100%;
     }
 
     .description {
         width: 100%;
-        height: 90px;
+        height: 50px;
         padding-right: 12px;
         padding-left: 12px;
         box-sizing: border-box;
     }
 
     .description p {
-        font-size: 15px;
+        font-size: 23px;
         color: dimgray;
     }
 
     footer {
-        margin-top: 400px;
+        margin-top: 250px;
         text-align: center;
         background-color: #333333;
         color: #FFFFFF;
@@ -463,3 +462,4 @@ img.picture6:hover {
         transform: scale(1, 1);
     }
 }
+
