@@ -1,0 +1,465 @@
+@media only screen and (max-width: 550px) {
+    img {
+        width: 50%;
+        height: auto;
+    }
+
+    * {
+        float: none;
+        position: static;
+    }
+
+    /* サイト全体のフォント指定 */
+    body {
+        font-family: "MS Pゴシック";
+    }
+
+    .text-background {
+        display: inline-block;
+        font-size: 30px;
+        font-weight: 600;
+        line-height: 35px;
+        padding: 5px;
+        color: #FFF;
+        background: #535353;
+    }
+
+    body {
+        margin: 0 auto;
+        width: 100%;
+        height: 100%;
+    }
+
+    #header_menu {
+        display: block;
+        position: fixed;
+        /*ポジションを固定する*/
+        top: 0px;
+        /*一番上に設置*/
+        left: 0px;
+        z-index: 9999;
+        /*どの要素よりも上にくるように*/
+        background-color: #535353;
+        /*メニューバー背景色*/
+        width: 100%;
+        /*横幅を100%に*/
+        padding: 0 0;
+    }
+
+    #header_menu a {
+        float: left;
+        /*メニューを横並びにする*/
+        font-size: 16px;
+        color: #FFF;
+        padding: 10px;
+    }
+
+    #header_menu a:after {
+        /*floatでデザインが崩れないように*/
+        display: block;
+        clear: both;
+        content: "";
+    }
+
+    /* 上のエリア(レイアウトのための装飾)*/
+    .over-area {
+        padding-top: 100px;
+        font-size: 3rem;
+        text-align: center;
+    }
+
+    /** 背景画像を固定して貼り付ける **/
+    .fix-image {
+        height: 80vh;
+        background-image: url("img/IMG_0949 3.jpg");
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        background-size: cover;
+        left: 0;
+        top: 0;
+        width: 100%;
+        z-index: -1;
+        box-shadow: inset 0px -100px 50px -50px #fff;
+        background-size: contain;
+        /*内側にぼかし(影)を入れる*/
+    }
+
+    .card {
+        text-align: center;
+        width: 300px;
+        height: 300px;
+        border: 1px solid lightgray;
+        margin: auto;
+    }
+
+    .picture img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .description {
+        width: 100%;
+        height: 45px;
+        padding-right: 12px;
+        padding-left: 12px;
+        box-sizing: border-box;
+    }
+
+    .description p {
+        font-size: 22px;
+        color: dimgray;
+    }
+
+    footer {
+        text-align: center;
+        font-size: 7px;
+        background-color: #333333;
+        color: #FFFFFF;
+        padding: 10px;
+    }
+}
+
+@media print,
+screen and (min-width: 551px) {
+    * {
+        float: none;
+        position: static;
+    }
+
+    /* サイト全体のフォント指定 */
+    body {
+        font-family: "MS Pゴシック";
+    }
+
+    .logotype {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .text-background {
+        display: inline-block;
+        font-size: 30px;
+        font-weight: 600;
+        line-height: 35px;
+        padding: 5px;
+        color: #FFF;
+        background: #535353;
+    }
+
+    body {
+        margin: 0 auto;
+        width: 100%;
+        height: 100%;
+    }
+
+    #header_menu {
+        display: block;
+        position: fixed;
+        /*ポジションを固定する*/
+        top: 0px;
+        /*一番上に設置*/
+        left: 0px;
+        z-index: 9999;
+        /*どの要素よりも上にくるように*/
+        background-color: #535353;
+        /*メニューバー背景色*/
+        width: 100%;
+        /*横幅を100%に*/
+        padding: 0 0;
+    }
+
+    #header_menu a {
+        float: left;
+        /*メニューを横並びにする*/
+        font-size: 16px;
+        color: #FFF;
+        padding: 10px;
+    }
+
+    #header_menu a:after {
+        /*floatでデザインが崩れないように*/
+        display: block;
+        clear: both;
+        content: "";
+    }
+
+    /* 上のエリア(レイアウトのための装飾)*/
+    .over-area {
+        height: 100vh;
+        padding-top: 100px;
+        font-size: 3rem;
+        text-align: center;
+    }
+
+    /** 背景画像を固定して貼り付ける **/
+    .fix-image {
+        background-image: url("img/IMG_0933.jpg");
+        background-attachment: fixed;
+        background-size: cover;
+        background-repeat: no-repeat;
+        box-shadow: inset 0px -100px 50px -50px #fff;
+        /*内側にぼかし(影)を入れる*/
+    }
+
+    /*下のエリア(レイアウトのための装飾)*/
+    .under-area {
+        text-align: center;
+        width: 100%;
+        height: 100vh;
+        margin: 0;
+        padding-top: 200px;
+        font-size: 3em;
+    }
+
+    #cards {
+        display: flex;
+        justify-content: center;
+    }
+
+    .card {
+        width: 300px;
+        height: 300px;
+        border: 1px solid lightgray;
+    }
+
+    .card:nth-child(2) {
+        margin-right: 50px;
+        margin-left: 50px;
+    }
+
+    .picture img {
+        width: 100%;
+    }
+
+    .description {
+        width: 100%;
+        height: 50px;
+        padding-right: 12px;
+        padding-left: 12px;
+        box-sizing: border-box;
+    }
+
+    .description p {
+        font-size: 23px;
+        color: dimgray;
+    }
+
+    footer {
+        margin-top: 250px;
+        text-align: center;
+        background-color: #333333;
+        color: #FFFFFF;
+        padding: 10px;
+    }
+}
+
+/*** 弾むアニメーション ***/
+img.picture1:hover {
+    animation: .8s picture1-anim linear forwards;
+}
+
+@keyframes picture1-anim {
+    10% {
+        transform: scale(1.1, 0.9);
+    }
+
+    40% {
+        transform: scale(1.2, 0.80);
+    }
+
+    50% {
+        transform: scale(0.85, 1.15);
+    }
+
+    60% {
+        transform: scale(1.1, 0.9);
+    }
+
+    70% {
+        transform: scale(0.95, 1.08);
+    }
+
+    90% {
+        transform: scale(0.98, 1.02);
+    }
+
+    100% {
+        transform: scale(1, 1);
+    }
+}
+
+/*** 弾むアニメーション ***/
+img.picture2:hover {
+    animation: .8s picture2-anim linear forwards;
+}
+
+@keyframes picture2-anim {
+    10% {
+        transform: scale(1.1, 0.9);
+    }
+
+    40% {
+        transform: scale(1.2, 0.80);
+    }
+
+    50% {
+        transform: scale(0.85, 1.15);
+    }
+
+    60% {
+        transform: scale(1.1, 0.9);
+    }
+
+    70% {
+        transform: scale(0.95, 1.08);
+    }
+
+    90% {
+        transform: scale(0.98, 1.02);
+    }
+
+    100% {
+        transform: scale(1, 1);
+    }
+}
+
+/*** 弾むアニメーション ***/
+img.picture3:hover {
+    animation: .8s picture3-anim linear forwards;
+}
+
+@keyframes picture3-anim {
+    10% {
+        transform: scale(1.1, 0.9);
+    }
+
+    40% {
+        transform: scale(1.2, 0.80);
+    }
+
+    50% {
+        transform: scale(0.85, 1.15);
+    }
+
+    60% {
+        transform: scale(1.1, 0.9);
+    }
+
+    70% {
+        transform: scale(0.95, 1.08);
+    }
+
+    90% {
+        transform: scale(0.98, 1.02);
+    }
+
+    100% {
+        transform: scale(1, 1);
+    }
+}
+
+/*** 弾むアニメーション ***/
+img.picture4:hover {
+    animation: .8s picture4-anim linear forwards;
+}
+
+@keyframes picture4-anim {
+    10% {
+        transform: scale(1.1, 0.9);
+    }
+
+    40% {
+        transform: scale(1.2, 0.80);
+    }
+
+    50% {
+        transform: scale(0.85, 1.15);
+    }
+
+    60% {
+        transform: scale(1.1, 0.9);
+    }
+
+    70% {
+        transform: scale(0.95, 1.08);
+    }
+
+    90% {
+        transform: scale(0.98, 1.02);
+    }
+
+    100% {
+        transform: scale(1, 1);
+    }
+}
+
+/*** 弾むアニメーション ***/
+img.picture5:hover {
+    animation: .8s picture5-anim linear forwards;
+}
+
+@keyframes picture5-anim {
+    10% {
+        transform: scale(1.1, 0.9);
+    }
+
+    40% {
+        transform: scale(1.2, 0.80);
+    }
+
+    50% {
+        transform: scale(0.85, 1.15);
+    }
+
+    60% {
+        transform: scale(1.1, 0.9);
+    }
+
+    70% {
+        transform: scale(0.95, 1.08);
+    }
+
+    90% {
+        transform: scale(0.98, 1.02);
+    }
+
+    100% {
+        transform: scale(1, 1);
+    }
+}
+
+/*** 弾むアニメーション ***/
+img.picture6:hover {
+    animation: .8s picture6-anim linear forwards;
+}
+
+@keyframes picture6-anim {
+    10% {
+        transform: scale(1.1, 0.9);
+    }
+
+    40% {
+        transform: scale(1.2, 0.80);
+    }
+
+    50% {
+        transform: scale(0.85, 1.15);
+    }
+
+    60% {
+        transform: scale(1.1, 0.9);
+    }
+
+    70% {
+        transform: scale(0.95, 1.08);
+    }
+
+    90% {
+        transform: scale(0.98, 1.02);
+    }
+
+    100% {
+        transform: scale(1, 1);
+    }
+}
+
