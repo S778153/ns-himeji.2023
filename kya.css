@@ -1,4 +1,8 @@
 @media only screen and (max-width: 550px) {
+
+
+
+
     img {
         width: 50%;
         height: auto;
@@ -462,4 +466,3 @@ img.picture6:hover {
         transform: scale(1, 1);
     }
 }
-
